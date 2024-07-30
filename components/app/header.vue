@@ -20,6 +20,10 @@ const navs = computed(() => [
     title: 'chain.title',
     path: '/chain',
   },
+  {
+    title: 'reconstruction.title',
+    path: '/reconstruction',
+  },
 ])
 const user = useUser()
 const showMenu = ref(false)

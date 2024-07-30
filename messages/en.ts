@@ -384,4 +384,35 @@ export default {
       notification: 'New Submission',
     },
   },
+  reconstruction: {
+    title: 'Reconstruction',
+    shortTitle: 'Recon',
+    description: 'Reconstruction is a place you can share your reconstruction during competitions.',
+    date: 'Date',
+    name: 'Name',
+    link: 'Link',
+    join: 'Join Now',
+    scramble: 'Scramble {round}-{group}-{number}',
+    mode: {
+      label: 'Mode',
+    },
+    myself: {
+      label: 'Myself',
+      description: 'This is my reconstruction.',
+    },
+    others: {
+      label: 'Others',
+      description: 'This is not my reconstruction.',
+      wcaId: 'WCA ID:',
+      required: 'WCA ID is required.',
+    },
+    solution: {
+      label: 'Solution',
+    },
+    comment: {
+      label: 'Comment',
+      description: 'You can type something to describe your reconstruction.',
+    },
+    solutions: 'Solutions',
+  },
 }

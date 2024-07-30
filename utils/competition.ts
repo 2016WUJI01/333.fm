@@ -16,6 +16,7 @@ export interface Competition {
   format: CompetitionFormat
   scrambles: Scramble[]
   status: CompetitionStatus
+  wcaCompetitionId?: string
 }
 
 export interface PastCompetition extends Competition {
@@ -34,6 +35,8 @@ export interface Result {
 
 export interface Scramble extends Time {
   id: number
+  round?: string
+  group?: string
   number: number
   scramble: string
   cubieCube?: {
@@ -89,6 +92,7 @@ export enum CompetitionType {
   RANDOM,
   ENDLESS,
   FMC_CHAIN,
+  RECONSTRUCTION,
 }
 
 export enum CompetitionSubType {
@@ -114,6 +118,8 @@ export enum CompetitionStatus {
 export enum CompetitionMode {
   REGULAR,
   UNLIMITED,
+  MYSELF,
+  OTHERS,
 }
 
 export interface Endless extends Competition {

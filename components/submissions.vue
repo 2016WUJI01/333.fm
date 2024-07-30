@@ -55,6 +55,8 @@ const counts = computed(() => {
     all: props.submissions?.length || 0,
     [CompetitionMode.REGULAR]: 0,
     [CompetitionMode.UNLIMITED]: 0,
+    [CompetitionMode.MYSELF]: 0,
+    [CompetitionMode.OTHERS]: 0,
   }
   for (const { mode } of props.submissions || [])
     counts[mode]++

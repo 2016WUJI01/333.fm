@@ -384,4 +384,36 @@ export default {
       notification: '有新提交',
     },
   },
+  reconstruction: {
+    title: '比赛复盘',
+    shortTitle: '复盘',
+    description: '比赛复盘是一个用于提交比赛解法的工具，可以用于记录自己的解法，也可以用于查看他人的解法。',
+    date: '比赛日期',
+    name: '比赛名称',
+    join: '立即参加',
+    scramble: '打乱 {round}-{group}-{number}',
+    mode: {
+      label: '模式',
+    },
+    myself: {
+      label: '本人',
+      description: '这是我的复盘。',
+    },
+    others: {
+      label: '他人',
+      description: '这是他人的复盘。',
+      wcaId: 'WCA ID:',
+      required: 'WCA ID 是必填的。',
+    },
+    solution: {
+      label: '解法',
+      description: '请勿输入任何非法{notation}！',
+      invalid: '请检查你的解法！',
+    },
+    comment: {
+      label: '备注',
+      description: '可以输入一些解法过程，或者随便什么。',
+    },
+    solutions: '解法',
+  },
 }
